@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script type="module" src="user-select-contain.mjs"></script>
+  <script nomodule src="user-select-contain.js"></script>
+  <link rel="stylesheet" href="user-select-contain.css">
+  <style>
+    body {
+      font: 13px Helvetica;
+      padding: 20px;
+      color: #999;
+    }
+    .user-select-contain {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <p><span class="user-select-contain">Triple click to select me.</span></p>
+  <p>This part won't be selected, but try to <span class="user-select-contain">select me</span> and nothing else.</p>
+</body>
+</html>

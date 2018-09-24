@@ -1,0 +1,31 @@
+{
+  "name": "user-select-contain-polyfill",
+  "version": "0.0.0",
+  "description": "",
+  "main": "user-select-contain.js",
+  "module": "user-select-contain.mjs",
+  "files": [
+    "user-select-contain.css",
+    "user-select-contain.js",
+    "user-select-contain.js.flow",
+    "user-select-contain.mjs",
+    "user-select-contain.mjs.flow"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/user-select-contain-polyfill.git"
+  },
+  "author": "GitHub, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/github/user-select-contain-polyfill/issues"
+  },
+  "homepage": "https://github.com/github/user-select-contain-polyfill#readme",
+  "devDependencies": {
+    "rollup": "^0.66.2"
+  }
+}
