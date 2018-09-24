@@ -18,7 +18,7 @@ import 'user-select-contain-polyfill'
 
 ### CSS
 
-```
+```css
 @import 'user-select-contain-polyfill.css';
 ```
 
