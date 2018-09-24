@@ -1,14 +1,3 @@
-// user-select: contain polyfill
-//
-// Marks element the container for triple click selections.
-//
-// Examples
-//
-//   <span class="user-select-contain">
-//     50ce349853
-//   </span>
-//
-
 function supportsUserSelectContain() {
   const el = document.createElement('div');
   el.style.cssText = '-ms-user-select: element; user-select: contain;';
@@ -19,7 +8,6 @@ function supportsUserSelectContain() {
   )
 }
 
-// Skip polyfill if theres native support, or if Selection APIs are not supported
 if (window.getSelection && !supportsUserSelectContain()) {
   document.addEventListener('click', function(event) {
     if (!(event.target instanceof Element)) return
