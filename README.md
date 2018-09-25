@@ -13,13 +13,13 @@ $ npm install user-select-contain-polyfill
 ### JS
 
 ```js
-import 'user-select-contain-polyfill'
+import "user-select-contain-polyfill";
 ```
 
 ### CSS
 
 ```css
-@import 'user-select-contain-polyfill.css';
+@import "user-select-contain-polyfill.css";
 ```
 
 ### HTML
