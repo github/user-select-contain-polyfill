@@ -1,6 +1,6 @@
 {
   "name": "user-select-contain-polyfill",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Polyfills `user-select: contain` property value",
   "main": "user-select-contain.js",
   "module": "user-select-contain.mjs",
