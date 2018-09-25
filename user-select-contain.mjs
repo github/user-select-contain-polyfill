@@ -8,19 +8,21 @@ function supportsUserSelectContain() {
   )
 }
 
+function handleUserSelectContain(event) {
+  if (!(event.target instanceof Element)) return
+
+  const currentTarget = event.target.closest('.user-select-contain');
+  if (!currentTarget) return
+
+  const selection = window.getSelection();
+  if (!selection.rangeCount) return
+
+  const container = selection.getRangeAt(0).commonAncestorContainer;
+  if (currentTarget.contains(container)) return
+
+  selection.selectAllChildren(currentTarget);
+}
+
 if (window.getSelection && !supportsUserSelectContain()) {
-  document.addEventListener('click', function(event) {
-    if (!(event.target instanceof Element)) return
-
-    const currentTarget = event.target.closest('.user-select-contain');
-    if (!currentTarget) return
-
-    const selection = window.getSelection();
-    if (!selection.rangeCount) return
-
-    const container = selection.getRangeAt(0).commonAncestorContainer;
-    if (currentTarget.contains(container)) return
-
-    selection.selectAllChildren(currentTarget);
-  });
+  document.addEventListener('click', handleUserSelectContain);
 }
