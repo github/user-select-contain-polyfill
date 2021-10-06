@@ -2,7 +2,7 @@
 
 Polyfills [`user-select: contain`](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select) property value by implementing the behavior on a CSS class name `user-select-contain`.
 
-This is only implemented in IE and Edge (under `element`) right now.
+This is only implemented in Internet Explorer right now.
 
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/#propdef-user-select)
   - [Firefox bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1036853)
