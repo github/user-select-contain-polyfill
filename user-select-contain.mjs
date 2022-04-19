@@ -15,7 +15,7 @@ function handleUserSelectContain(event) {
   if (!currentTarget) return;
 
   const selection = window.getSelection();
-  if (!selection.rangeCount) return;
+  if (!selection.rangeCount || selection.type !== 'Range') return;
 
   const container = selection.getRangeAt(0).commonAncestorContainer;
   if (currentTarget.contains(container)) return;
