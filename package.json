@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/github/user-select-contain-polyfill#readme",
   "devDependencies": {
-    "rollup": "^0.66.2"
+    "rollup": "^4.22.5"
   }
 }
